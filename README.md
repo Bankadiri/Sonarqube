@@ -13,6 +13,7 @@ Install java openJDK 1.8+ for SonarQube version 7.8
 1. Create sonar user to manage the SonarQube server
 #As a good security practice, SonarQuber Server is not advised to run sonar service as a root user, 
 # create a new user called sonar and grant sudo access to manage sonar services as follows
+``` sh
 
 sudo useradd sonar
 # Grand sudo access to sonar user
@@ -44,6 +45,8 @@ sonarqube default port is = 9000
 get the sonarqube public ip address
 publicIP:9000
 sudo su - sonar
+
+```
 
 curl -v localhost:9000
 34.325.293.78:9000
