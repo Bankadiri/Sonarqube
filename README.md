@@ -1,6 +1,11 @@
 # sonarqube-installation
+``` sh
 
 SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities in various programming languages. It provides reports on code coverage, coding standards, and can be integrated into the build process to ensure code quality at all stages of development.
+
+```
+
+``` sh
 
 SonarQube Installation And Setup In AWS EC2 Redhat Instance.
 Prerequisite
@@ -13,6 +18,8 @@ Install java openJDK 1.8+ for SonarQube version 7.8
 1. Create sonar user to manage the SonarQube server
 #As a good security practice, SonarQuber Server is not advised to run sonar service as a root user, 
 # create a new user called sonar and grant sudo access to manage sonar services as follows
+```
+
 ``` sh
 
 sudo useradd sonar
@@ -47,8 +54,10 @@ publicIP:9000
 sudo su - sonar
 
 ```
-
+``` sh
 curl -v localhost:9000
 34.325.293.78:9000
 default USERNAME: admin
 default password: admin
+
+```
