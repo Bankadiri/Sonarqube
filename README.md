@@ -35,11 +35,11 @@ sudo passwd sonar
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
 
-3. Install Java JDK 1.8+ required for sonarqube to start
 
 ```
 
 ``` sh
+3. Install Java JDK 1.8+ required for sonarqube to start
 cd /opt
 sudo yum -y install unzip wget git
 sudo yum install  java-11-openjdk-devel
